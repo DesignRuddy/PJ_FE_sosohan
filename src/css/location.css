@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.location_common{
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+
+}
+
+.location_common h1{
+    text-align: center;
+    font-family: 'GmarketSansMedium';
+}
+
+
+
+#map{
+    align-items: center;
+    margin: 30px auto;
+    background: #ffffff;
+    width: 100%;
+    height: 60vh;
+}
+
+
+.location_information{
+    width: 100%;
+    padding: 50px;
+    border-top: 2px solid lightgray;
+    background-color: #A0C8D0;
+}
+.location_information h2 small{
+    font-family: 'GmarketSansMedium';
+}
+.location_information h3{
+    font-family: 'GmarketSansMedium';
+}
+.location_information h3 small{
+    font-family: 'GmarketSansMedium';
+}
+
+
+
+@media screen and (max-width:1200px) {
+    #map{
+        margin:50px auto;
+    }
+    .location_traffic{
+        padding: 30px;
+    }
+    .location_common h1{
+        font-size: 2rem !important;
+    }
+    .location_information{
+        padding: 30px;
+    }
+    .location_information h2{
+        font-size: 1.7rem;
+    }
+    .traffic_details h2{
+        font-size: 1.7rem;
+    }
+    small{
+        font-size: 1.5rem !important;
+    }
+    .traffic_details img{
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    #map{
+        height: 40vh;
+    }
+    .location_information{
+        padding: 20px;
+    }
+    .location_traffic{
+        padding: 20px;
+    }
+    .location_information h1{
+        font-size: 1.7rem !important;
+    }
+    .location_information h2{
+        font-size:  1.5rem;
+    }
+    .location_information h3{
+        font-size: 1.3rem;
+    }
+    .traffic_details h2{
+        font-size: 1.5rem;
+    }
+    small{
+        font-size: 1.3rem !important;
+    }
+    .traffic_details img{
+        width: 70px;
+        height: 70px;
+    }
+    
+}
+
+@media screen and(max-width: 768px) {
+    #map{
+        height: 40vh;
+    }
+    .location_traffic{
+        padding: 10px;
+    }
+    .location_information{
+        padding: 10px;
+    }
+    .location_common h1{
+        font-size: 1.5rem !important;
+    }
+    .location_information h2{
+        font-size: 1.3rem;
+    }
+    .location_information h3{
+        font-size: 1.1rem;
+    }
+    .traffic_details h2{
+        font-size: 1.3rem;
+    }
+    small{
+        font-size: 1.1rem !important;
+    }
+    .traffic_details img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    #map{
+        height: 30vh;
+        margin: 30px auto;
+    }
+    .location_traffic{
+        padding: 10px;
+    }
+    .location_common h1{
+        font-size: 1.3rem;
+    }
+    .location_information{
+        padding: 10px;
+    }
+    .location_information h2{
+        font-size: 1rem;
+    }
+    .location_information h3{
+        font-size: .7rem;
+    }
+    .traffic_details h2{
+        font-size: 1rem;
+    }
+    small{
+        font-size: .7rem;
+    }
+    .traffic_details img{
+        width: 50px;
+        height: 50px;
+    }
+}

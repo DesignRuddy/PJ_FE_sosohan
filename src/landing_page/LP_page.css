@@ -1,0 +1,181 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    text-align: center;
+  }
+  
+  .hero {
+    /* background: url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg") no-repeat center; */
+    background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    background-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero .page2{
+    /* background: url("../sosohan_background1.jpg") no-repeat center; */
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+  }
+
+  .inner-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+  }
+  @media only screen and (min-width: 320px) {
+    .inner-text {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  @media only screen and (min-width: 400px) {
+    .inner-text {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media only screen and (min-width: 680px) {
+    .inner-text {
+      font-size: 75px;
+    }
+  }
+  @media only screen and (min-width: 950px) {
+    .inner-text {
+      font-size: 100px;
+    }
+  }
+  
+  .p1 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+  }
+  @media only screen and (max-width: 465px) {
+    .p1 {
+      display: block;
+      position: absolute;
+      top: -25%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+/*   
+  .p2 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0;
+    line-height: 1;
+    color: #4FC3F7;
+  }
+  @media only screen and (max-width: 465px) {
+    .p2 {
+      position: relative;
+      top: 0.6em;
+    }
+  }
+  
+  .hero-down {
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    color: #f5f5f5;
+    border-radius: 100%;
+  }
+  .hero-down:hover, .hero-down:focus {
+    color: #ccc;
+  }
+  .hero-down:active {
+    color: #f5f5f5;
+  }
+  .hero-down .btn-react {
+    background-color: #f5f5f5;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    opacity: 0;
+    position: absolute;
+  }
+  .hero-down i {
+    vertical-align: bottom;
+    position: relative;
+    top: 0.1em;
+  } */
+
+/* 첫번째 랜딩 페이지  */
+.inner-text{
+  text-align: center;
+  font-size: 40px;
+}
+
+/* 두번째 랜딩 페이지 */
+.SecondLading{
+  text-align: center;
+}
+.SecondLading img{
+  width: 700px;
+  height: 500px;
+}
+.SecondText{
+  font-size: 30px;
+  margin-top: 50px;
+}
+.SecondLading button{
+  margin-top: 50px;
+}
+
+/* 세번째 랜딩 페이지 */
+.ThirdLanding{
+  text-align: center;
+}
+.ThirdImg img{
+  width: 500px;
+  height: 450px;
+}
+.ThirdText{
+  margin-left: 500px;
+  font-size: 30px;
+}
+.ThirdLanding button{
+  margin-top: 20px;
+}
+
+/* 네번째 랜딩 페이지 */
+.FourthLand{
+  margin-top: 200px;
+  margin-left: 250px;
+}
+.FourthLand img{
+  width: 40%;
+  margin-left: 250px;
+}
+.FourthText{
+  margin-left: 400px;
+}
+/* 다섯번째 랜딩 페이지 */
+.FifthLand{
+  text-align: center;
+}
+.FifthLand img{
+  width: 1200px;
+  height: 700px;
+}
+
+
+
+
+
+
+

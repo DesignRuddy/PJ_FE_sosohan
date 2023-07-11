@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "210font";
+  src: url("../font/210\ 밀레니얼R.ttf");
+}
+
+/* *{
+  font-family: "210font";
+} */
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+*{
+  font-family: 'GmarketSansMedium';
+}
+
+body {
+  margin : 0;
+}
+
+.section-common {
+  width : 100%;
+  height : 100%;
+  display:flex;
+  justify-content : center;
+  align-items:center;
+  font-size:36px;
+}
+
+.section-area1 {
+  background-color : red;
+}
+.section-area2 {
+  background-color : blue;
+}
+.section-area3 {
+  background-color : pink;
+}
+
+
+.slide-navigation button:nth-child(1) {
+  display: none;
+}
+
+.slide-navigation button:nth-last-child(1) {
+  display: none;
+}
+
+.slide-navigation button {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 5px;
+  height: 15px;
+  margin: 0 5px;
+  font-size: 0px;
+  cursor: pointer;
+}
+
+.slide-navigation {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0px;
+}
+.FullPage::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-navigation button:disabled {
+  background-color: black;
+  border: 1px solid white;
+}
+
+div > a > .Navigation .active {
+  background-color: blueviolet !important;
+  color: blueviolet !important;
+}
