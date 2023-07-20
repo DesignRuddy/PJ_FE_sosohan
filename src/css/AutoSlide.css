@@ -1,0 +1,450 @@
+/* ----- HEADER ----- */
+.slick-container{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.slick-container p{ 
+    font-size: 15px;
+    text-align: center;
+}
+.slick-container a{
+    font-size: 15px;
+}
+
+.slick-container img{
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header .container {
+    display: flex !important;
+    justify-content: space-between;
+    width: 1200px;
+    line-height: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header .container h1>a>img {
+    width: 100px;
+}
+
+header .container .menuLeft ul {
+    display: flex;
+    gap: 100px;
+}
+
+header .container .menuRight ul {
+    display: flex;
+    gap: 100px;
+    bottom: 10px;
+}
+
+header .container .menuRight ul>a {
+    padding-top: 80px;
+}
+
+/* ----- MAINVISUAL ----- */
+
+main .container .mainVisual {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+main .container .mainVisual .leftInfo {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 999;
+    width: 455px;
+    background: #fff;
+    padding: 50px 50px;
+}
+
+main .container .mainVisual .leftInfo h2 {
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+main .container .mainVisual .leftInfo p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+main .container .mainVisual .leftInfo a {
+    font-size: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #b0aea8;
+    border-radius: 25px;
+    padding: 10px 35px;
+}
+
+main .container .mainVisual .leftInfo a:hover {
+    background: #fde04c;
+    border: 1px solid #b0aea800;
+}
+
+main .container .mainVisual .rightInfo {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    z-index: 999;
+    background: #fde04c;
+    padding: 25px 60px 25px 40px;
+}
+
+main .container .mainVisual .rightInfo p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+main .container .mainVisual .rightInfo a {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+main .container .mainVisual .rightInfo a::after {
+    content: "\e90b";
+    position: relative;
+    font-family: xeicon;
+    font-size: 17px;
+    color: rgba(51, 51, 51, 0.5);
+    left: 10px;
+    transition: 0.6s;
+}
+
+main .container .mainVisual .rightInfo a:hover::after {
+    content: "\e90b";
+    position: relative;
+    font-family: xeicon;
+    font-size: 17px;
+    color: rgba(51, 51, 51, 0.5);
+    left: 20px;
+    transition: 0.6s;
+}
+
+/* ----- PRODUCTSSLIDER ----- */
+
+main .productSlider {
+    margin-bottom: 50px;
+}
+
+main .productSlider .container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+main .productSlider .container h2 {
+    font-size: 40px;
+    font-weight: 500;
+    /* padding: 25px 15px; */
+    padding: 25px 60px;
+    border-bottom: 1px solid #e0ded8;
+}
+
+main .productSlider .container .newSlider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-left: 2px solid #333333;
+    border-top: 2px solid #333333;
+}
+
+main .productSlider .container .newSlider .slick-prev {
+    margin: 0 0 0 -800px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+main .productSlider .container .newSlider .slick-next {
+    margin: 0 0 0 800px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+main .productSlider .container .newSlider .slick-dots {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .productSlider .container .newSlider .slick-dots li {
+    display: inline-block;
+    width: 187.5px;
+    height: 1px;
+    background: #e0ded8;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+main .productSlider .container .newSlider .slick-dots li.slick-active {
+    height: 4px;
+    background: #333;
+    transition: 0.3s;
+}
+
+main .productSlider .container .newSlider .slick-dots li button {
+    display: none;
+}
+
+main .productSlider .container .newSlider .productBox {
+    display: flex;
+    gap: 20px;
+    padding: 50px 10px;
+}
+
+main .productSlider .container .newSlider .productBox img {
+    width: 250px;
+}
+
+main .productSlider .container .newSlider .productBox .box {
+    padding: 35px 0;
+}
+
+main .productSlider .container .newSlider .productBox .box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 50%;
+}
+
+main .productSlider .container .newSlider .productBox .box a {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+main .productSlider .container .newSlider .productBox .box a::after {
+    content: "\e90b";
+    font-family: xeicon;
+    font-size: 17px;
+    color: rgba(51, 51, 51, 0.5);
+    margin-left: 30px;
+    transition: 0.6s;
+}
+
+main .productSlider .container .newSlider .productBox .box a:hover::after {
+    content: "\e90b";
+    font-family: xeicon;
+    font-size: 17px;
+    color: rgba(51, 51, 51, 0.5);
+    margin-left: 40px;
+    transition: 0.6s;
+}
+
+/* ----- NEWPRODUCTS ----- */
+
+main .newProducts .container {
+    display: flex;
+}
+
+main .newProducts .container .leftBox {
+    width: 500px;
+}
+
+main .newProducts .container .midBox {
+    width: 500px;
+    border-left: 1px solid #e0ded8;
+}
+
+main .newProducts .container .rightBox {
+    width: 500px;
+    border-left: 1px solid #e0ded8;
+}
+
+/* ----- BANNER ----- */
+
+main .banner {
+    position: relative;
+}
+
+main .banner .bannerInfo {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    z-index: 999;
+    width: 455px;
+    background: #fff;
+    padding: 40px 50px;
+}
+
+main .banner .bannerInfo h2 {
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+main .banner .bannerInfo p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+main .banner .bannerInfo a {
+    font-size: 15px;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #b0aea8;
+    border-radius: 25px;
+    padding: 10px 35px;
+}
+
+main .banner .bannerInfo a:hover {
+    background: #fde04c;
+    border: 1px solid #b0aea800;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    /* border-top: 1px solid #e0ded8; */
+}
+
+/* footer .box {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 10px;
+} */
+
+footer .box .footerTop {
+    display: flex;
+    color: #333;
+
+}
+
+footer .box .footerTop .footerLeft {
+    display: flex;
+    gap: 130px;
+    flex: 2;
+    margin-bottom: 30px;
+}
+
+footer .box .footerTop .footerLeft .left ul {
+    margin-bottom: 40px;
+}
+
+footer .box .footerTop .footerLeft .left ul>h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+footer .box .footerTop .footerLeft .left ul>li {
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+footer .box .footerTop .footerLeft .mid ul {
+    margin-bottom: 40px;
+}
+
+footer .box .footerTop .footerLeft .mid ul>h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+footer .box .footerTop .footerLeft .mid ul>li {
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+footer .box .footerTop .footerLeft .right ul>li {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+footer .box .footerTop .footerRight {
+    flex: 1;
+}
+
+footer .box .footerTop .footerRight h3 {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+footer .box .footerTop .footerRight p {
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+footer .box .footerTop .footerRight .sns {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #333;
+}
+
+#emailForm {
+    border-bottom: 1px solid #e0ded8;
+    margin-bottom: 15px;
+}
+
+#emailForm input {
+    width: 90%;
+    font-size: 13px;
+    border: none;
+}
+
+#emailForm button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    color: #c2c0b9;
+}
+
+
+footer .box .footerBottom ul {
+    display: flex;
+    gap: 15px;
+}
+
+footer .box .footerBottom ul>li {
+    font-size: 11px;
+    font-weight: 200;
+}
+
+footer .box .footerBottom ul .adp {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+
+
+/* 여기서부터는 slick */
+
+

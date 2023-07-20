@@ -1,0 +1,96 @@
+
+/* -----------------주거서비스 CSS 시작 ------------------ */
+
+/*div변경과 관련된 코드입니다.
+색 등의 디자인은 보이기 위해서 표시해놨으니
+스타일 추가 및 변경이 가능합니다.*/
+.main3 input[type=radio] {
+    display: none;
+    }
+    #tab-9:checked ~ .tab label:nth-child(1),
+    #tab-10:checked ~ .tab label:nth-child(2),
+    #tab-11:checked ~ .tab label:nth-child(3),
+    #tab-12:checked ~ .tab label:nth-child(4) {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    }
+    .content > div {
+    display: none;
+    }
+    #tab-9:checked ~ .content div:nth-child(1),
+    #tab-10:checked ~ .content div:nth-child(2),
+    #tab-11:checked ~ .content div:nth-child(3),
+    #tab-12:checked ~ .content div:nth-child(4)  {
+    display: block;
+    }
+    .main {
+    margin: 0 auto;
+    max-width: 100%;
+    }
+    .tab {
+    overflow: hidden;
+    }
+    .tab label {
+      font-size: 18px;
+      cursor: pointer;
+      float: left;
+      width: 25%;
+      text-align: center;
+      padding: 15px 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      user-select: none;
+      -webkit-user-select: none;
+      border: 1px solid gray;
+    }
+    .content {
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    min-height: 250px;
+    width: 100%;
+    }
+    .content > div{
+     padding: 30px;
+     line-height: 1.5;
+     font-size: 17px;
+    }
+    .content-detail{
+    border: 2px solid #807a7a;
+    font-weight: lighter;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(201, 211, 241, 0.3) ;
+    }
+    .content-img{
+    margin-top: 40px
+    }
+    
+    .content-img img{
+    width: 30%;
+    float: left;
+    height: 500px;
+    }
+    
+    .content-text{
+    width: 60%;
+    float: right;
+    height: 500px;
+    text-align: left;
+    line-height: 1.8;
+    font-weight: lighter;
+    font-size: 14px;
+    }
+    
+    .content-text a {
+    border: 2px solid #807a7a;
+    }
+    
+    .text{
+    font-size: 24px;
+    font-weight: bold;
+    }
+    
+    .content-dis{
+    height: 800px;
+    }
+    /* -----------------주거서비스 CSS 끝 ------------------ */

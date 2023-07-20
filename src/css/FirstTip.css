@@ -1,0 +1,117 @@
+.SecondMenu {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 4% 0px;
+    letter-spacing: 1px;
+  }
+  
+  .main input[type=radio] {
+    display: none;
+  }
+  
+  .main input[type=radio]:checked {
+    display: none;
+  }
+  
+  #tab-1:checked ~ .tab label:nth-child(1),
+  #tab-1:not(:checked) ~ .tab label:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+  }
+  
+  .content > div {
+    display: none;
+  }
+  
+  .content > div:not(:first-child) {
+    display: none;
+  }
+  
+  #tab-1:checked ~ .content div:nth-child(1),
+  #tab-2:checked ~ .content div:nth-child(2),
+  #tab-3:checked ~ .content div:nth-child(3),
+  #tab-4:checked ~ .content div:nth-child(4)  {
+    display: block;
+  }
+  
+  .main {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .tab {
+    overflow: hidden;
+  }
+  
+  .tab label {
+    font-size: 18px;
+    cursor: pointer;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    user-select: none;
+    -webkit-user-select: none;
+    border: 1px solid gray;
+  }
+  
+  .content {
+    min-height: 250px;
+    width: 100%;
+  }
+  
+  .content > div {
+    padding: 30px;
+    line-height: 1.5;
+    font-size: 17px;
+  }
+  
+  .content-detail {
+    border: 2px solid #807a7a;
+    font-weight: lighter;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(201, 211, 241, 0.3);
+  }
+  
+  .content-img {
+    margin-top: 40px;
+  }
+  
+  .content-img img {
+    width: 30%;
+    float: left;
+    height: 500px;
+  }
+  
+  .content-text {
+    width: 60%;
+    float: right;
+    height: 500px;
+    text-align: left;
+    line-height: 1.8;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  
+  .content-text a {
+    border: 2px solid #807a7a;
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content-dis {
+    height: 800px;
+  }
+  

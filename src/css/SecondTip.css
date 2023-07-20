@@ -1,0 +1,119 @@
+.main2 input[type=radio] {
+    display: none;
+  }
+  
+  .main2 input[type=radio]:checked {
+    display: none;
+  }
+  
+  #tab-5:checked ~ .tab2 label:nth-child(1),
+  #tab-5:not(:checked) ~ .tab2 label:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+  }
+  
+  .content2 > div {
+    display: none;
+  }
+  
+  .content2 > div:not(:first-child) {
+    display: none;
+  }
+  
+  #tab-5:checked ~ .content2 div:nth-child(1),
+  #tab-6:checked ~ .content2 div:nth-child(2),
+  #tab-7:checked ~ .content2 div:nth-child(3),
+  #tab-8:checked ~ .content2 div:nth-child(4)  {
+    display: block;
+  }
+  
+  .main2 {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .tab2 {
+    overflow: hidden;
+  }
+  
+  .tab2 label {
+    font-size: 18px;
+    cursor: pointer;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    user-select: none;
+    -webkit-user-select: none;
+    border: 1px solid gray;
+  }
+  
+  .content2 {
+    min-height: 250px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .content2 > div {
+    padding: 30px;
+    line-height: 1.5;
+    font-size: 17px;
+  }
+  
+  .content-detail {
+    border: 2px solid #807a7a;
+    font-weight: lighter;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(201, 211, 241, 0.3);
+  }
+  
+  .content-img {
+    margin-top: 40px
+  }
+  
+  .content-img img {
+    width: 30%;
+    float: left;
+    height: 500px;
+  }
+  
+  .content-text2 {
+    height: auto;
+    text-align: left;
+    line-height: 1.8;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  
+  .content-text a {
+    border: 2px solid #807a7a;
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content-dis {
+    height: 800px;
+  }
+  
+  .content-text2 {
+    width: 50%;
+    float: left;
+  }
+  
+  .content-text3 {
+    width: 50%;
+    float: right;
+    height: auto;
+    text-align: left;
+    line-height: 1.8;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  
