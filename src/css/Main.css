@@ -395,7 +395,7 @@ background-color: rgba(0, 0, 0, 0.2);
 box-shadow: none;
 }
 .content > div {
-display: none;
+    display: none;
 }
 #tab-9:checked ~ .content div:nth-child(1),
 #tab-10:checked ~ .content div:nth-child(2),
@@ -404,8 +404,8 @@ display: none;
 display: block;
 }
 .main {
-margin: 0 auto;
-max-width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
 .tab {
 overflow: hidden;
@@ -445,21 +445,30 @@ background-color: rgb(201, 211, 241, 0.3) ;
 margin-top: 40px
 }
 
+.thirdimg img{
+  width: 100%;
+}
+.thirdimg2 img{
+  width: 80%;
+  height: 400px;
+}
+
 .content-img img{
 width: 30%;
 float: left;
 height: 500px;
 }
 
-.content-text{
+.content-text2{
 width: 60%;
-float: right;
-height: 500px;
+float: left;
+height: 300px;
 text-align: left;
 line-height: 1.8;
 font-weight: lighter;
 font-size: 14px;
 }
+
 
 .content-text a {
 border: 2px solid #807a7a;

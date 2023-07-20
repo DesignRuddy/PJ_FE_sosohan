@@ -14,6 +14,7 @@ import Mfooter from './Mfooter';
 import Company from './Company';
 import SosohanJob from './sosohanJob';
 import AddressPopup from './Login/AddressPopup';
+import Payment from './Payment';
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
             <Route path="/BoardList" element={<BoardList />} />
             <Route path="/AddressPopup" element={<AddressPopup />} />
             <Route path="localhost:3000/:crud" element={<InputForm />} />
+            <Route path='/Payment' element={<Payment/>} />
           </Routes>
         </Router>
         {window.location.pathname !== "/AddressPopup" && (

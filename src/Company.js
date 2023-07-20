@@ -3,7 +3,9 @@
 import {useEffect} from "react";
 import React, { Component } from 'react';
 import "../src/css/Company.css"
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
+import Payment from "./Payment";
+
 
 //지도 소스 시작
 const location_name = "소소한";
@@ -68,7 +70,6 @@ const kakaoMapScript = () => {
                                        <p>제공하는 정보를 통해 청년들의 <br class="mo"/>
                                         삶의 질이 상승하는 것을 응원합니다.
                                        </p>
-                                       {/* <p class="more">more</p> */}
                                    </div>
                                </a>
                            </li>
@@ -80,7 +81,6 @@ const kakaoMapScript = () => {
                                        <h3>청년정책정보</h3>
                                        <p>필요한 정보만 쏙쏙
                                        전달하고 있습니다.</p>
-                                       {/* <p class="more">more</p> */}
                                    </div>
                                </a>
                            </li>
@@ -92,7 +92,6 @@ const kakaoMapScript = () => {
                                     </img><h3>소통의 마당</h3>   
                                        <p>청년들의 고민들 함께 나눌 수 있는 <br class="mo"/>
                                         공간을 마련했습니다.</p>
-                                       {/* <p class="more">more</p> */}
                                    </div>
                                </a>
                            </li>
@@ -134,30 +133,34 @@ const kakaoMapScript = () => {
                            모습을 만나보세요.</p>
                        </div>
                        <ul>
+                            <li>
+                               <a href="#">
+                                   <p className="img"><img src="../images/news.png" alt=""/></p>
+                                   <div class="bottom">
+                                       <p class="color">소소한 뉴스레터</p>
+                                       <p>소소한 뉴스를 매달 e-mail로 <br/> 만나보실  수 있습니다.</p>
+                                       <Payment />
+                                   </div>
+                               </a>
+                           </li>
                            <li>
                                <a href="#">
                                    <p class="img"><img src="../images/facebook.png" alt=""/></p>
                                    <div class="bottom">
                                        <p class="color">소소한 페이스북</p>
-                                       <p>소소한의 정보를 페이스북에서 만나보실 수 있습니다.</p>
+                                       <p>소소한의 정보를 페이스북에서 <br/> 만나보실 수 있습니다.</p>
+                                       <Button>바로가기</Button>
                                    </div>
                                </a>
                            </li>
-                           <li>
-                               <a href="#">
-                                   <p class="img"><img src="../images/youtube.png" alt=""/></p>
-                                   <div class="bottom">
-                                       <p class="color">소소한 유튜브</p>
-                                       <p>소소한의 정보를 유튜브에서 만나보실 수 있습니다.</p>
-                                   </div>
-                               </a>
-                           </li>
+                          
                            <li>
                                <a href="#">
                                    <p class="img"><img src="../images/insta.png" alt=""/></p>
                                    <div class="bottom">
                                        <p class="color">소소한 인스타그램</p>
-                                       <p>소소한의 정보를 인스타그램에서 만나보실 수 있습니다.</p>
+                                       <p>소소한의 정보를 인스타그램에서 <br/> 만나보실 수 있습니다.</p>
+                                       <Button>바로가기</Button>
                                    </div>
                                </a>
                            </li>
